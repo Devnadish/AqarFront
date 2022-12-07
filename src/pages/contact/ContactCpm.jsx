@@ -53,13 +53,16 @@ align-items: center;
 `;
 /* ------------------------------------- */
 const Btn = styled.button`
+display: flex;
+align-items: center;
+justify-content: space-between;
   outline: none;
   padding: 0.2rem 1rem;
   min-width: 5rem;
   font-family: "CairoBold";
   border-radius: 8px;
-  border: 1px solid;
-  background-color: ${({ theme }) => theme.soft};
+  /* border: 1px solid; */
+  background-color: ${({ theme }) => theme.price};
   color: ${({ theme }) => theme.text};
   cursor: pointer;
 `;

@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 import cpm from "./ContactCpm";
 import { useGetdata } from "../../component/utils/hooks/useGetdata";
 // import data from "./data.json";
+import { ImClipboard } from "react-icons/im";
 
 function Contact() {
   const [iscopy, setIscopy] = useState(false);
@@ -41,6 +42,7 @@ function Contact() {
           
           <cpm.Btn iscopy={iscopy} onClick={handleCopy}>
             {iscopy ? <>تم النسخ </> : <> نسخ</>}
+          <ImClipboard/>
           </cpm.Btn>
           <cpm.Txt>خط الطول : {data.data?.lat}</cpm.Txt>
           <cpm.Txt>خط العرض : {data.data?.att}</cpm.Txt>

@@ -10,6 +10,8 @@ import { MdOutlineLocalOffer } from "react-icons/md";
 import { MdOutlineContactPhone } from "react-icons/md";
 import { AiOutlineHome } from "react-icons/ai";
 import { MdFilterAlt } from "react-icons/md";
+
+import { MdLocationOn } from "react-icons/md";
 import LeftDrawer from "../drawer/LeftDrawer";
 
 function AppHeader({ open, setOpen, darkMode, setDarkMode }) {
@@ -31,7 +33,7 @@ function AppHeader({ open, setOpen, darkMode, setDarkMode }) {
           </Style.MenuLink>
           {/*  --------------------------------------------*/}
           <Style.MenuLink to="/contact">
-            <MdOutlineContactPhone />
+            <MdLocationOn />
             <Style.MenuTitle>تواصل</Style.MenuTitle>
           </Style.MenuLink>
 

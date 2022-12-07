@@ -23,11 +23,12 @@ const MenuArae = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  background-color: ${({ theme }) => theme.price};
+  height: 50px;
+  
+  background-color: ${({ theme }) => theme.bgLighter};
   position: absolute;
-  top: 10px;
+  top: 18px;
   left: 0;
-  height: 30px;
   border-radius: 4px;
 `;
 /* --------------------------------- */
@@ -39,7 +40,7 @@ const MenuTxt = styled.p`
   font-size: 0.9rem;
   color: ${({ theme }) => theme.text};
   background-color: ${({ theme }) => theme.updateBtn};
-  border-radius: 1px;
+  border-radius: 12px 12px 0px 0px;
   padding: 0 0.5rem;
   height: 100%;
   width: 20%;
