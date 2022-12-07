@@ -21,7 +21,7 @@ const CardWraper = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 45%;
   width: 100%;
   margin: auto;
   margin-top: 0.1rem;
@@ -34,7 +34,7 @@ const CardWraper = styled.div`
   overflow: auto;
   @media (max-width: 500px) {
     flex-direction: column;
-    max-width: 500px;
+    max-width: 95%;
     width: 100%;
     font-size: 0.8rem;
   }
@@ -89,7 +89,7 @@ const CardBody = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   height: 100%;

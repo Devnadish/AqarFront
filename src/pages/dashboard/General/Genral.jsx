@@ -149,7 +149,13 @@ const DataForm = ({
             Refheroimage={Refheroimage}
             Refherodeail={Refherodeail}
             data={data}
+            heroimage={heroimage}
+            setHeroImage={setHeroImage}
           />
+
+
+
+
           <SoicalInfo
             Refemail={Refemail}
             Refinstgram={Refinstgram}

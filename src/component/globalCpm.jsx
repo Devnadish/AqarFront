@@ -79,7 +79,7 @@ const ImagePreview = styled.div`
   background-image: url(${({imgpreview})=>  imgpreview === null ? "img/general/addfile.svg" : null});
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: ${({imgpreview})=>  imgpreview === null ? "blue" : null};
+  background-color: ${({imgpreview})=>  imgpreview === null ? "lightgray" : null};
   background-position: center;
   
   width: 10rem;
@@ -93,7 +93,7 @@ const ImagePreviewContainer = styled.div`
   flex-direction: column;
   gap: 10px;
   margin-top: 10px;
-  border: 1px solid rgba(255, 255, 255,.2);
+  border: 1px solid rgba(0, 0,0,.7);
   padding: 1rem;
   border-radius: 4px;
   

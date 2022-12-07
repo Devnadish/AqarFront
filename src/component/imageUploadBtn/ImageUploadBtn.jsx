@@ -3,7 +3,7 @@ import glb from "../../component/globalCpm";
 import { AiOutlineCloudUpload } from "react-icons/ai";
 import DiloagShow from "../dailog/DiloagShow";
 import {  toast } from 'react-toastify';
-function ImageUploadBtn({ refid, imageLogo, logoPreview }) {
+function ImageUploadBtn({ refid,  logoPreview,btnTitle }) {
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
@@ -24,7 +24,7 @@ const handlshow = () => {
       <glb.ImagePreviewContainer>
         <glb.ImageBtn type="button" onClick={handleClick}>
           <AiOutlineCloudUpload />
-          <glb.TXTLabel>تحميل</glb.TXTLabel>
+          <glb.TXTLabel>{btnTitle}</glb.TXTLabel>
         </glb.ImageBtn>
 
         <glb.ImagePreview imgpreview={logoPreview} onClick={handlshow}>
