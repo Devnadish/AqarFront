@@ -10,7 +10,7 @@ const BodyWarper = styled.div`
   margin: auto;
   color: ${({ theme }) => theme.text};
   min-height: 0px;
-   
+
   @media (max-width: 500px) {
     flex-direction: column;
     font-size: 0.8rem;
@@ -21,15 +21,16 @@ const CardWraper = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
-  max-width: 100%;
+  max-width: 350px;
   width: 100%;
   margin: auto;
-  margin-top: .1rem;
-  margin-bottom: .5rem;
-  border-radius: 8px;
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 2px;
   border: 1px solid;
+
   color: ${({ theme }) => theme.text};
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); */
   overflow: auto;
   @media (max-width: 500px) {
     flex-direction: column;
@@ -38,8 +39,7 @@ const CardWraper = styled.div`
     font-size: 0.8rem;
   }
 `;
-
-
+/* ------------------------------------- */
 const OfferCardWraper = styled.div`
   display: flex;
   position: relative;
@@ -47,14 +47,13 @@ const OfferCardWraper = styled.div`
   max-width: 500px;
   width: 25%;
   margin: auto;
-  margin-top: .1rem;
-  margin-bottom: .5rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
   border-radius: 8px;
   border: 1px solid;
   color: ${({ theme }) => theme.text};
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   overflow: auto;
-  
   @media (max-width: 500px) {
     flex-direction: column;
     max-width: 500px;
@@ -62,117 +61,95 @@ const OfferCardWraper = styled.div`
     font-size: 0.8rem;
   }
 `;
-
-
-
-
-
-const CardHeader= styled.div`
-width: 100%;
-height: 30px;
-background-color: ${({ theme }) => theme.bg};
-font-family: "CairoBold";
-padding: .1rem;
-text-align: center;
-
-`;
-
-const OfferCardHeader= styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-height: fit-content;
-padding: .5rem;
-background-color: ${({ theme }) => theme.bg};
-font-family: "CairoBold";
-/* padding: .1rem; */
-text-align: center;
-
-`;
-
-const CardBody= styled.div`
-padding: 10px;
-display: flex;
-flex-wrap: wrap;
-gap: .5rem;
-justify-content: space-evenly;
-align-items: center;
-
-width: 100%;
-height: 100%;
-background-color:${({ theme }) => theme.nafbar};
-
-`;
-
-
 /* ------------------------------------- */
-
-
-
-
-const NormalDivr= styled.div`
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-width: 100%;
-gap: 1.5rem;
-max-height: 80%;
-height: 100%;
-overflow: auto;
-/* padding: 1rem; */
-
-@media (max-width: 500px) {
-  flex-direction: column;
-  max-height: 100%;
-  height: 100%;
-  padding-bottom: 6rem;
-  }
-
+const CardHeader = styled.div`
+  width: 100%;
+  height: 30px;
+  background-color: ${({ theme }) => theme.cardHeader};
+  font-family: "CairoBold";
+  padding: 0.1rem;
+  text-align: center;
 `;
-
-
-
-const OfferNormalDivr= styled.div`
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-width: 100%;
-gap: 1.5rem;
-max-height: 80%;
-height: 100%;
-overflow: auto;
-/* padding: 1rem; */
-
-@media (max-width: 500px) {
-  flex-direction: column;
-  max-height: 100%;
-  height: 100%;
-  padding-bottom: 6rem;
-  }
-
+/* ------------------------------------- */
+const OfferCardHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  padding: 0.5rem;
+  background-color: ${({ theme }) => theme.bg};
+  font-family: "CairoBold";
+  /* padding: .1rem; */
+  text-align: center;
 `;
+/* ------------------------------------- */
+const CardBody = styled.div`
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: ${({ theme }) => theme.nafbar};
+`;
+/* ------------------------------------- */
+const NormalDivr = styled.div`
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  width: 100%;
+  gap: 1.5rem;
+  max-height: 80%;
+  height: 100%;
+  overflow: auto;
 
+  @media (max-width: 500px) {
+    flex-direction: column;
+    max-height: 100%;
+    height: 100%;
+    padding-bottom: 6rem;
+  }
+`;
+/* ------------------------------------- */
+const OfferNormalDivr = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  gap: 1.5rem;
+  max-height: 80%;
+  height: 100%;
+  overflow: auto;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    max-height: 100%;
+    height: 100%;
+    padding-bottom: 6rem;
+  }
+`;
 const ImageInput = styled.input`
   /* display: none; */
-   
 `;
+/* ------------------------------------- */
+
 const ImageLabelInput = styled.label`
   display: block;
   /* border: 1px solid; */
   width: ${({ width }) => width};
   border-radius: 8px;
-  padding: .3rem;
+  padding: 0.3rem;
   text-align: center;
   color: white;
   background-color: #ce6504;
   font-family: "CairoBold";
-  box-shadow: 6px 4px 13px -7px rgba(0,0,0,0.75);
--webkit-box-shadow: 6px 4px 13px -7px rgba(0,0,0,0.75);
--moz-box-shadow: 6px 4px 13px -7px rgba(0,0,0,0.75);
-   
+  box-shadow: 6px 4px 13px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 4px 13px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 4px 13px -7px rgba(0, 0, 0, 0.75);
 `;
-
+/* ------------------------------------- */
 
 const TextInput = styled.textarea`
   border: 0.5px solid ${({ theme }) => theme.hrColor};
@@ -182,8 +159,8 @@ const TextInput = styled.textarea`
   outline: none;
   padding: 5px;
   width: ${({ width }) => width};
-resize : vertical;
-font-family: "TajawalRegular";
+  resize: vertical;
+  font-family: "TajawalRegular";
 
   &:focus {
     color: black;
@@ -196,11 +173,6 @@ font-family: "TajawalRegular";
     width: ${({ width }) => width};
   }
 `;
-
-
-
-/* ------------------------------------- */
- 
 /* ------------------------------------- */
 const MenuArae = styled.div`
   display: flex;
@@ -221,7 +193,7 @@ const MenuTxt = styled.p`
   font-family: "CairoBold";
   font-size: 0.9rem;
   color: ${({ theme }) => theme.text};
-  background-color: #4d0101;
+  background-color: ${({ theme }) => theme.updateBtn};
   border-radius: 4px;
   padding: 0 0.5rem;
   cursor: pointer;
@@ -256,38 +228,29 @@ const Txt = styled.p`
   font-family: "CairoBold";
   font-size: 0.9rem;
   width: ${({ width }) => width};
-
-
- 
-  /* color: ${({ theme }) => theme.text}; */
-  /* min-width: 0px; */
   @media (max-width: 500px) {
     font-size: 0.8rem;
   }
 `;
 /* ------------------------------------- */
 const Btn = styled.button`
-display: flex;
-align-items: center;
- justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   outline: none;
   padding: 0.2rem 1rem;
-  /* min-width: 5rem; */
   font-family: "TajawalBold";
-
   border-radius: 8px;
   border: 1px solid;
   width: 100%;
-  font-size:1rem;
+  font-size: 1rem;
   justify-items: center;
   background-color: ${({ theme }) => theme.updateBtn};
   color: ${({ theme }) => theme.text};
-box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   color: black;
   cursor: pointer;
 `;
-
 /* ------------------------------------- */
 const ShowContentWarper = styled.div`
   display: flex;
@@ -303,9 +266,7 @@ const ShowContentWarper = styled.div`
   background-color: ${({ theme }) => theme.soft};
   border-radius: 8px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-
   @media (max-width: 500px) {
-    
   }
 `;
 /* -------------FieldSet------------------------ */
@@ -360,16 +321,6 @@ const FlexDiv = styled.div`
     gap: 3px;
   }
 `;
-/* ------------------input------------------- */
-
-
-
-/* ------------------input------------------- */
-
-
-  
- 
-
 /* ------------------------------------- */
 export default {
   BodyWarper,
@@ -383,7 +334,7 @@ export default {
   MenuTxt,
   ShowContentWarper,
   FieldSet,
-   Txtlabel,
+  Txtlabel,
   TextInput,
   ImageInput,
   ImageLabelInput,
@@ -394,10 +345,4 @@ export default {
   OfferNormalDivr,
   OfferCardWraper,
   OfferCardHeader,
-   
-   
- 
 };
-
-
-

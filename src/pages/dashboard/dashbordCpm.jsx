@@ -34,14 +34,20 @@ const MenuArae = styled.div`
 const MenuTxt = styled.p`
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: "CairoBold";
   font-size: 0.9rem;
   color: ${({ theme }) => theme.text};
-  background-color: #4d0101;
-  border-radius: 4px;
+  background-color: ${({ theme }) => theme.updateBtn};
+  border-radius: 1px;
   padding: 0 0.5rem;
+  height: 100%;
+  width: 20%;
   cursor: pointer;
-  /* width: 100%; */
+  &:hover {
+    background-color: ${({ theme }) => theme.hoverBtn};
+
+  }
   @media (max-width: 500px) {
     font-size: 0.8rem;
   }

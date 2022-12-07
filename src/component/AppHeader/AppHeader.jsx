@@ -34,8 +34,18 @@ function AppHeader({ open, setOpen, darkMode, setDarkMode }) {
             <MdOutlineContactPhone />
             <Style.MenuTitle>تواصل</Style.MenuTitle>
           </Style.MenuLink>
-          <Style.MenuLink>
 
+
+          <Style.MenuLink to="/dashboard">
+            <MdOutlineContactPhone />
+            <Style.MenuTitle>dash</Style.MenuTitle>
+          </Style.MenuLink>
+
+
+
+
+
+          <Style.MenuLink>
             <Style.MenuTitle menuDir="col" onClick={()=>{setOpenFilter(true)}}>
             <MdFilterAlt />
             {/* <Style.MenuTitle >تصفية</Style.MenuTitle> */}
