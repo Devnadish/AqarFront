@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "type": "ايجار",
+    "header": "فيلا المريخ",
+    "img": "./img/img1.jpg",
+    "detail": "تحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربةتحربة",
+    "commentCounter": "18",
+    "create": "10/11/2020",
+    "seeCounter": "1200"
+  },
+  {
+    "id": "2",
+    "type": "بيع",
+    "header": "فيلا [جدة]",
+    "img": "https://placeimg.com/640/360/tech",
+    "detail": "dfsdfsdfsds",
+    "commentCounter": "150",
+    "create": "10/10/2020",
+    "seeCounter": "15151"
+  },
+  {
+    "id": "3",
+    "type": "ايجار",
+    "header": "فيلا [جدة]",
+    "img": "https://picsum.photos/200/300",
+    "detail": "dfsdfsdfsds",
+    "commentCounter": "150",
+    "create": "10/10/2020",
+    "seeCounter": "15151"
+  },
+  { "id": "4",
+  "type": "ايجار",
+  "header": "فيلا [جدة]",
+  "img": "https://picsum.photos/200/300",
+  "detail": "dfsdfsdfsds",
+  "commentCounter": "150",
+  "create": "10/10/2020",
+  "seeCounter": "15151"},
+  { "id": "5",
+  "type": "بيع",
+  "header": "فيلا [جدة]",
+  "img": "https://picsum.photos/200/300",
+  "detail": "dfsdfsdfsds",
+  "commentCounter": "150",
+  "create": "10/10/2020",
+  "seeCounter": "15151"},
+  {
+    "id": "6",
+    "type": "بيع",
+    "header": "فيلا [جدة]",
+    "img": "https://picsum.photos/200/300",
+    "detail": "dfsdfsdfsds",
+    "commentCounter": "150",
+    "create": "10/10/2020",
+    "seeCounter": "15151"
+  }
+]

@@ -1,0 +1,36 @@
+
+  
+@font-face {
+  src: url("./fonts/Cairo-Bold.ttf") format("truetype"); ;
+  font-family: "CairoBold";
+   font-style: normal;
+   font-weight: bold;
+  }
+
+
+
+  @font-face {
+    src: url("./fonts/Cairo-Regular.ttf") format("truetype"); ;
+    font-family: "CairoRegular";
+     font-style: normal;
+     font-weight: normal;
+    }
+
+
+
+      
+@font-face {
+  src: url("./fonts/Tajawal-Bold.ttf") format("truetype"); ;
+  font-family: "TajawalBold";
+   font-style: normal;
+   font-weight: bold;
+  }
+
+
+
+  @font-face {
+    src: url("./fonts/Tajawal-Regular.ttf") format("truetype"); ;
+    font-family: "TajawalRegular";
+     font-style: normal;
+     font-weight: normal;
+    }
