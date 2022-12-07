@@ -34,7 +34,7 @@ const CardWraper = styled.div`
   overflow: auto;
   @media (max-width: 500px) {
     flex-direction: column;
-    max-width: 95%;
+    max-width: 90%;
     width: 100%;
     font-size: 0.8rem;
   }
@@ -56,7 +56,7 @@ const OfferCardWraper = styled.div`
   overflow: auto;
   @media (max-width: 500px) {
     flex-direction: column;
-    max-width: 500px;
+    max-width: 100%;
     width: 100%;
     font-size: 0.8rem;
   }
@@ -321,6 +321,22 @@ const FlexDiv = styled.div`
     gap: 3px;
   }
 `;
+const DataDiv= styled.div`
+width: 70%;
+@media (max-width: 500px) {
+  width: 100%;
+  }
+`;
+const ImageDataDiv= styled.div`
+display: flex;
+justify-content: center;
+width: 25%;
+@media (max-width: 500px) {
+  width: 100%;
+
+  }
+`;
+
 /* ------------------------------------- */
 export default {
   BodyWarper,
@@ -345,4 +361,6 @@ export default {
   OfferNormalDivr,
   OfferCardWraper,
   OfferCardHeader,
+  DataDiv,
+  ImageDataDiv
 };

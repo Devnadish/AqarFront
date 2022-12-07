@@ -34,7 +34,7 @@ function GeneralInfo({
             disabled
             hidden
           />
-          <div style={{width:"70%"}}>
+          <cpm.DataDiv  >
             <glb.InputContainer>
               <glb.TXTLabel>الاسم</glb.TXTLabel>
 
@@ -60,12 +60,12 @@ function GeneralInfo({
                 name="phone"
               />
             </glb.InputContainer>
-          </div>
+          </cpm.DataDiv>
 
           {/* <cpm.ImageLabelInput htmlFor="logoimage" width={"45%"}>
                 صورة الشعار
               </cpm.ImageLabelInput>  */}
-          <div style={{width:"28%"}}>
+          <cpm.ImageDataDiv>
             <input
               ref={Reflogo}
               name="logoImage"
@@ -83,7 +83,7 @@ function GeneralInfo({
               logoPreview={logoPreview}
               btnTitle={"الشعار"}
             />
-          </div>
+          </cpm.ImageDataDiv>
         </cpm.CardBody>
       </cpm.CardWraper>
     </>

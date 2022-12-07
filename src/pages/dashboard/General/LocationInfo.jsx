@@ -25,14 +25,15 @@ function LocationInfo({
       <cpm.CardWraper>
         <cpm.CardHeader> الموقع</cpm.CardHeader>
         <cpm.CardBody>
-          <div style={{ width: "70%" }}>
+          <cpm.DataDiv>
             <glb.InputContainer>
               <glb.TXTLabel>العنوان</glb.TXTLabel>
-              <glb.Input
+              <cpm.TextInput
                 defaultValue={data.data.adrs}
                 placeholder="location"
                 width={"100%"}
                 ref={Refadrs}
+                rows={"5"}
                 name="adrs"
               />
             </glb.InputContainer>
@@ -57,8 +58,8 @@ function LocationInfo({
                 name="lan"
               />
             </glb.InputContainer>
-          </div>
-          <div style={{ width: "25%" }}>
+          </cpm.DataDiv>
+          <cpm.ImageDataDiv>
             <cpm.ImageInput
               ref={Reflocation}
               // defaultValue={data.data.location}
@@ -76,7 +77,7 @@ function LocationInfo({
               logoPreview={mapPreview}
               btnTitle={"الموقع"}
             />
-          </div>
+          </cpm.ImageDataDiv>
         </cpm.CardBody>
       </cpm.CardWraper>
     </>

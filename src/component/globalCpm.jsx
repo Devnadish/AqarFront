@@ -11,7 +11,7 @@ const InputContainer = styled.div`
 
 const TXTLabel = styled.p`
 display: inline;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-family: "TajawalRegular";
   @media (max-width: 500px) {
     font-size: 0.8rem;
@@ -94,7 +94,7 @@ const ImagePreviewContainer = styled.div`
   flex-direction: column;
   gap: 10px;
   margin-top: 10px;
-  border: 1px solid rgba(0, 0,0,.7);
+  border: 1px solid rgba(255, 255,0,.2);
   padding: 1rem;
   border-radius: 4px;
   

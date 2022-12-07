@@ -22,7 +22,7 @@ function MainPageInfo({
       <cpm.CardWraper>
         <cpm.CardHeader>الصفحة الرئسية</cpm.CardHeader>
         <cpm.CardBody>
-          <div style={{width:"70%"}}>
+          <cpm.DataDiv >
             <glb.InputContainer>
               <glb.TXTLabel>كلمة ترحبية</glb.TXTLabel>
               <glb.Input
@@ -44,13 +44,12 @@ function MainPageInfo({
                 ref={Refherodeail}
               />
             </glb.InputContainer>
-          </div>
+          </cpm.DataDiv>
 
-          <div style={{width:"25%"}}>
+          <cpm.ImageDataDiv >
             <cpm.ImageInput
               ref={Refheroimage}
               width={"45%"}
-              // defaultValue={data.data.heroimage}
               placeholder="heroimage"
               name="HeroImage"
               type={"file"}
@@ -60,11 +59,10 @@ function MainPageInfo({
             />
             <ImageUploadBtn
               refid={Refheroimage}
-              // imageLogo={heroimage}
               logoPreview={heroPreview}
               btnTitle={"البنر"}
             />
-          </div>
+          </cpm.ImageDataDiv>
         </cpm.CardBody>
       </cpm.CardWraper>
     </>
