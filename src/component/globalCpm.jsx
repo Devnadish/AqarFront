@@ -10,6 +10,7 @@ const InputContainer = styled.div`
 `;
 
 const TXTLabel = styled.p`
+display: inline;
   font-size: 0.9rem;
   font-family: "TajawalRegular";
   @media (max-width: 500px) {

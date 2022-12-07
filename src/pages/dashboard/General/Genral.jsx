@@ -169,6 +169,8 @@ const DataForm = ({
             Refatt={Refatt}
             Reflocation={Reflocation}
             data={data}
+            mapimage={mapimage}
+            setMapImage={setMapImage}
           />
 
           <cpm.Btn type="submit">حفظ التعديلات</cpm.Btn>
