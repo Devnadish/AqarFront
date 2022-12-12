@@ -68,7 +68,9 @@ function MultiImageUploader({ files, setFiles, maxUpload, isMulti }) {
   const [open, setOpen] = useState(false);
   const [bigImage, setBigImage] = useState("");
   const { getRootProps, getInputProps } = useDropzone({
-    accept: "image/*",
+    accept:   {
+      'image/*': ['.jpeg', '.jpg', '.png'],
+     },
     maxFiles: maxUpload,
     multiple: isMulti,
     
@@ -106,13 +108,22 @@ const handleClike=(I)=>{
 
 }
 
+
+const removeFile =   (I,e) => {
+  e.preventDefault()
+  e.stopPropagation()
+  const newFiles = [...files]
+  newFiles.splice(newFiles.indexOf(I), 1)
+  setFiles(newFiles)
+}
+
     return (
       <>
         {files.map((file) => (
           <React.Fragment key={file.name}>
             <ImageWreaper >
               <ImagePreview src={file.preview} alt="image" onClick={()=>handleClike(file.preview)}/>
-              <RemoveImage>X</RemoveImage>
+              <RemoveImage onClick={(e)=>removeFile(file.preview,e)} >X</RemoveImage>
             </ImageWreaper>
            
             {open   ? (
