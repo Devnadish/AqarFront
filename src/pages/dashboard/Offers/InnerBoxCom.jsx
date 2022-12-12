@@ -14,6 +14,7 @@ function InnerBoxCom({children,flexDir="column"}) {
       flexDirection: flexDir,
       minWidth:"300px"  ,
       width: "100%",
+      height: "100%",
     }}
   >
     {children}

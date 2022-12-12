@@ -3,6 +3,7 @@ import { useDropzone } from "react-dropzone";
 import React,{useState} from "react";
 import DiloagShow from "../../../component/dailog/DiloagShow"
 import glb from "../../../component/globalCpm";
+import { Box, Typography } from "@mui/material";
 
 const Dropzone = styled.div`
   display: flex;
@@ -17,8 +18,8 @@ const Dropzone = styled.div`
 const Text = styled.p`
   border: dotted #555 2px;
   border-radius: 4px;
-  width: 97%;
-  height: 65px;
+  width: 100%;
+  height: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +64,7 @@ const RemoveImage = styled.button`
   background-color: rgba(255, 255, 255, 0.4);
 `;
 
-function MultiImageUploader({ files, setFiles, maxUpload, isMulti }) {
+function MultiImageUploader({ files, setFiles, maxUpload, isMulti,title="",noteTitle="" }) {
   
   const [open, setOpen] = useState(false);
   const [bigImage, setBigImage] = useState("");
@@ -144,7 +145,35 @@ const removeFile =   (I,e) => {
     <>
       <Dropzone {...getRootProps()}>
         <input type="file" {...getInputProps()} />
-        <Text className="text">اضغط هنا او اسحب الملفات</Text>
+        <Box sx={{ display: "flex", flexDirection: "column",justifyContent:"center",alignItems:"center",gap:1 }}>
+        <Box sx={{ display: "flex", justifyContent:"space-between",alignItems:"flex-start",gap:1 }}>
+          <Typography
+            sx={{
+              fontFamily: "CairoBold",
+              color: "white",
+              backgroundColor: "primary.light",
+              width: "fit-content",
+              paddingLeft: "1rem",
+              paddingRight: "1rem",
+              borderRadius:1
+            }}
+          >
+            {title}
+          </Typography>
+            <Typography 
+             sx={{
+              fontFamily: "TajawalRegular",
+              fontSize: ".8rem",
+              color: "white",
+              backgroundColor: "error.light",
+              width: "fit-content",
+              paddingLeft: "1rem",
+              paddingRight: "1rem",
+              borderRadius:1
+            }}>{noteTitle}</Typography>
+            </Box>
+          <Text className="text">اضغط هنا او اسحب الصور</Text>
+        </Box>
       </Dropzone>
       <ImageContainer>
         <PreviewImage />

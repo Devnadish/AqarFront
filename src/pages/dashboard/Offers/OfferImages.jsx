@@ -10,7 +10,7 @@ export const OfferImages = ({
       <InnerBoxCom>
         <MultiImageUploader files={imageToUpload} setFiles={setImageToUpload}
         maxUpload={10}
-        isMulti={true} />
+        isMulti={true} title="صورة العرض" noteTitle="10 صور حد اقصى"/>
       </InnerBoxCom>
     </>
   );

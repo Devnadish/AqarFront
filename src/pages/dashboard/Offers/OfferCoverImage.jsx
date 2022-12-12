@@ -12,7 +12,7 @@ export const OfferCoverImage = ({coverImage, setCoverImage}) => {
 <InnerBoxCom>
         <MultiImageUploader files={coverImage} setFiles={setCoverImage}
           maxUpload={1}
-          isMulti={false} />
+          isMulti={false} title="صورة العرض الرئسية"/>
       </InnerBoxCom>
 
     </>

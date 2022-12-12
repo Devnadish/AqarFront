@@ -27,6 +27,7 @@ const InputContainer = styled.div`
   width: 100%;
   /* border:1px solid rgba(0, 0, 255, 0.9); */
   padding: 5px;
+  height: 100%;
   gap: 5px;
 `;
 
@@ -145,7 +146,7 @@ const InputTextarea = styled.textarea`
 /* ----------------------------------------- */
 const SeclectOption = styled.select`
   /* ${InputCss} */
-  max-height: 45px;
+  /* max-height: 45px; */
   width: 100%;
   height: 100%;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -153,7 +154,7 @@ const SeclectOption = styled.select`
  justify-content: flex-start;
  align-items:"center";
 font-size: .8rem;
-/* padding:.5rem .5rem;  */
+padding:.5rem .5rem; 
 color:white;
 background-color: #9496a5;
 font-family: "TajawalRegular";

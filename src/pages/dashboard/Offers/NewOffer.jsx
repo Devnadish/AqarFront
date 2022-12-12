@@ -8,6 +8,7 @@ import { OfferDetail } from "./OfferDetail";
 import { OfferOther } from "./OfferOther";
 import { OfferCoverImage } from "./OfferCoverImage";
 import AqarType from "../../../data/AqarType.json"
+import Reigon from "../../../data/reigon.json"
 import BoxCom from "./BoxCom";
 import { Button } from "@mui/material";
 
@@ -91,7 +92,9 @@ function NewOffer() {
 
           <BoxCom>
             <OfferRegion
-              offerTypeData={offerTypeData}
+              reigonData={Reigon}
+              cityData={Reigon}
+              distData={Reigon}
               regon={regon}
               city={city}
               dist={dist}
