@@ -7,8 +7,9 @@ import { OfferImages } from "./OfferImages";
 import { OfferDetail } from "./OfferDetail";
 import { OfferOther } from "./OfferOther";
 import { OfferCoverImage } from "./OfferCoverImage";
+import AqarType from "../../../data/AqarType.json"
 import BoxCom from "./BoxCom";
-import { Button, Typography } from "@mui/material";
+import { Button } from "@mui/material";
 
 function NewOffer() {
   const [coverImage, setCoverImage] = useState([]);
@@ -81,7 +82,7 @@ function NewOffer() {
         >
           <BoxCom>
             <OfferId
-              offerTypeData={offerTypeData}
+              offerTypeData={AqarType}
               offerId={offerId}
               offerDate={offerDate}
               offerType={offerType}

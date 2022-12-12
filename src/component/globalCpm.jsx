@@ -124,6 +124,8 @@ const Form = styled.form`
 /* ----------------------------------------- */
 const Input = styled.input`
   ${InputCss}
+  background-color: ${({disabled})=>disabled === true ? "rgba(255,150,0,.9)" :"transparent"};
+  color: black;
   width: ${({ width }) => width};
   @media (max-width: 768px) {
     font-size: 0.8rem;
@@ -134,6 +136,7 @@ const Input = styled.input`
 const InputTextarea = styled.textarea`
   ${InputCss}
   width: ${({ width }) => width};
+  color: black;
   @media (max-width: 768px) {
     font-size: 0.8rem;
     width: ${({ width }) => width};
@@ -142,23 +145,21 @@ const InputTextarea = styled.textarea`
 /* ----------------------------------------- */
 const SeclectOption = styled.select`
   /* ${InputCss} */
-  max-height: 31px;
+  max-height: 45px;
   width: 100%;
+  height: 100%;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  /* height: 100%; */
-font-size: .9rem;
-padding:.5rem .5rem; 
+ display: flex;
+ justify-content: flex-start;
+ align-items:"center";
+font-size: .8rem;
+/* padding:.5rem .5rem;  */
 color:white;
 background-color: #9496a5;
- 
+font-family: "TajawalRegular";
 border: 0;
 
-
-/*    
-  @media (max-width: 768px) {
-    font-size: 0.8rem;
-    width: ${({ width }) => width};
-  } */
+ 
 `;
  
 

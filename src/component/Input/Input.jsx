@@ -4,14 +4,15 @@ export function Input({
   Xlabel,
   Xtype ,
   Xid,
- Xrefrence,
+  Xrefrence,
   XdefalutValue,
   Xplaceholder,
   disable = false,
   dirLabel="column",
-  xhidden  
+  xhidden  ,
+  xvalue
 }) {
- 
+ console.log("XdefalutValue ",XdefalutValue)
   return (
     <>
       <glb.InputContainer dirLabel={dirLabel}>
@@ -23,7 +24,9 @@ export function Input({
           placeholder={Xplaceholder}
           disabled={disable}
           ref={Xrefrence}
+          // value={xvalue}
           hidden={xhidden}
+          defalutValue={ XdefalutValue}
         />
       </glb.InputContainer>
     </>
