@@ -29,7 +29,7 @@ const ContentWarper = styled.div`
   background-color: #777;
   border-radius: 4px;
   overflow: auto;
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     padding: 1rem;
     width: 100%;
     height: 100%;
@@ -54,7 +54,7 @@ const SideMenu = styled.div`
   background-color: #777;
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     width: 100%;
     margin: 0rem;
     height: 50px;
@@ -74,7 +74,7 @@ const ShowContentWarper = styled.div`
   background-color: #777;
   border-radius: 8px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     width: 100%;
     top: 60px;
     left: 0;
@@ -93,7 +93,7 @@ const InnerSideMenu = styled.div`
   background-color: #777;
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     flex-direction: row;
   }
 `;
@@ -162,7 +162,7 @@ const txtSharedstyle = css`
   width: 100%;
   text-align: center;
   /* height: 5rem; */
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     font-size: 0.8rem;
     padding: 0.2rem;
   }
@@ -206,7 +206,7 @@ const FieldSet = styled.fieldset`
   padding: 5px 5px 5px 5px;
   margin: 5px 0;
   font-family: "TajawalBold";
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     text-align: right;
     margin: 0;
     padding: 0px 0px 0px 0px;

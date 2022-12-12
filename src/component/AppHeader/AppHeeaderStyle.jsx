@@ -42,17 +42,25 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  cursor: pointer;
-  padding: 5px 0px;
-  border-left: 1px solid ${({ theme }) => theme.text};
   flex: 1;
+  background-image: url(${({urx})=>urx});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* gap: 20px; */
+  
+  height: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  /* padding: 5px 0px; */
+  /* border-left: 1px solid ${({ theme }) => theme.text}; */
   &:hover {
-    background-color: ${({ theme }) => theme.soft};
+    border : 5px solid transparent;
   }
 
   @media only screen and (max-width: 500px) {
-    display: ${({ menuDir }) => (menuDir === "col" ? "flex" : "none")};
+    /* display: ${({ menuDir }) => (menuDir === "col" ? "flex" : "none")}; */
+    height: 100%;
   }
 `;
 /* ----------------------------------- */

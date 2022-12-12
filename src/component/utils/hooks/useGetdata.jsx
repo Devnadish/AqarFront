@@ -3,7 +3,11 @@ import { useQuery } from '@tanstack/react-query'
 import axios from "axios"
 
 const getData =async () =>{
-    return await axios.get("http://localhost:3009/aqar/getdata")
+  console.log(process.env.NODE_ENV)
+  console.log(import.meta.env)
+   const url=import.meta.env.VITE_BASE_URL+"/aqar/getdata"
+    return await axios.get(url)
+    // return await axios.get("http://localhost:3009/aqar/getdata")
   }
 
 

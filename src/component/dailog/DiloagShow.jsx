@@ -15,10 +15,11 @@ function DiloagShow({
   title,
   titleColor = "primary.dark",
   bodyColor = "background.paper",
+  Xfullscreen = false
 }) {
   return (
     <>
-      <Dialog   sx={{width:"100%"}}  open={open} onClose={toggle}>
+      <Dialog   sx={{width:"100%" }}  open={open} onClose={toggle} fullScreen={Xfullscreen}>
         <DialogTitle
           sx={{
             display: "flex",
@@ -73,6 +74,7 @@ function DiloagShow({
             width: "100%",
             height: "100%",
             overflow: "auto",
+            
           }}
         >
           <Box sx={{overflow:"auto"}}>{children}</Box>

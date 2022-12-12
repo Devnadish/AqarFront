@@ -27,10 +27,13 @@ function About() {
 export default About;
 
 const HeroImage = () => {
-  
+ 
+  const imagePath=import.meta.env.VITE_mainPageImage+"heroImage.jpg"
+  // console.log(imagePath1)
   return (
     <>
-      <cpm.Image src={data.heroimage} loading="lazy"/>
+      {/* <cpm.Image src={data.heroimage} loading="lazy"/> */}
+      <cpm.Image src={imagePath} loading="lazy"/>
     </>
   );
 };

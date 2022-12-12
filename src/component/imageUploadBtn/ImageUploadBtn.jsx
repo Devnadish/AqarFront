@@ -3,15 +3,16 @@ import glb from "../../component/globalCpm";
 import { AiOutlineCloudUpload } from "react-icons/ai";
 import DiloagShow from "../dailog/DiloagShow";
 import {  toast } from 'react-toastify';
+
+
+
 function ImageUploadBtn({ refid,  logoPreview,btnTitle }) {
   const [open, setOpen] = useState(false);
-
   const handleClick = () => {
     refid.current.click();
   };
 
-const handlshow = () => {
-     
+  const handlshow = () => {
     if (logoPreview===null){
         toast.info("الرجاء اختيار الصورة قبل طلب عرضها ...")
     }else{
@@ -31,6 +32,9 @@ const handlshow = () => {
           <glb.Image src={logoPreview} />
         </glb.ImagePreview>
       </glb.ImagePreviewContainer>
+
+
+      
       {open   ? (
         <DiloagShow open={open} toggle={setOpen}>
           <glb.Image src={logoPreview} />

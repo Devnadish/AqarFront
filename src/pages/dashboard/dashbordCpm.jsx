@@ -12,7 +12,7 @@ const BodyWarper = styled.div`
   margin: auto;
   color: ${({ theme }) => theme.text};
   min-height: 0px;
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     font-size: 0.8rem;
   }
@@ -49,7 +49,7 @@ const MenuTxt = styled.p`
     background-color: ${({ theme }) => theme.hoverBtn};
 
   }
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     font-size: 0.8rem;
   }
 `;
@@ -82,7 +82,7 @@ const Txt = styled.p`
 
   /* color: ${({ theme }) => theme.text}; */
   /* min-width: 0px; */
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     font-size: 0.8rem;
   }
 `;
@@ -129,7 +129,7 @@ const ShowContentWarper = styled.div`
   border-radius: 8px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
   }
 `;
 /* -------------FieldSet------------------------ */
@@ -146,7 +146,7 @@ const FieldSet = styled.div`
   legend {
     font-size: 0.8rem;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     text-align: right;
     margin: 0;
     padding: 0px 0px 0px 0px;
@@ -162,7 +162,7 @@ const Txtlabel = styled.label`
   font-size: 0.9rem;
   min-width: 0px;
   color: ${({ theme }) => theme.text};
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     font-size: 0.8rem;
     min-width: 0px;
   }
@@ -178,7 +178,7 @@ const FlexDiv = styled.div`
   gap: 7px;
   margin: 0.5rem;
   background-color: #201f1f;
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     display: flex;
     font-size: 0.8rem;
     gap: 3px;
@@ -203,7 +203,7 @@ const TextInput = styled.textarea`
     color: black;
     background-color: white;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     /* flex-grow: 1;
     flex-shrink: 1; */
     font-size: 0.8rem;

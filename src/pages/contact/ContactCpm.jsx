@@ -11,7 +11,7 @@ const BodyWarper = styled.div`
   color: ${({ theme }) => theme.text};
   gap:1rem;
   overflow: auto;
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     font-size: 0.8rem;
   }
 `;
@@ -47,7 +47,7 @@ align-items: center;
   font-size: .9rem;
   /* padding: 1rem; */
   color: ${({ theme }) => theme.text};
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     font-size: 0.8rem;
   }
 `;

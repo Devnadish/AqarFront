@@ -41,7 +41,7 @@ const BodyWrapper = styled.div`
   width: 100%;
   background-color: ${({ theme }) => theme.bgLighter};
 
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     padding: 10px 20px;
     flex-direction: column;
     /* align-items: center; */

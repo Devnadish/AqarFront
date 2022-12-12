@@ -11,7 +11,7 @@ const BodyWarper = styled.div`
   color: ${({ theme }) => theme.text};
   min-height: 0px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     font-size: 0.8rem;
   }
@@ -32,7 +32,7 @@ const CardWraper = styled.div`
   color: ${({ theme }) => theme.text};
   /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); */
   overflow: auto;
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     max-width: 90%;
     width: 100%;
@@ -54,7 +54,7 @@ const OfferCardWraper = styled.div`
   color: ${({ theme }) => theme.text};
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   overflow: auto;
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     max-width: 100%;
     width: 100%;
@@ -106,7 +106,7 @@ const NormalDivr = styled.div`
   height: 100%;
   overflow: auto;
 
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     max-height: 100%;
     height: 100%;
@@ -123,7 +123,7 @@ const OfferNormalDivr = styled.div`
   max-height: 80%;
   height: 100%;
   overflow: auto;
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     max-height: 100%;
     height: 100%;
@@ -166,7 +166,7 @@ const TextInput = styled.textarea`
     color: black;
     background-color: white;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     /* flex-grow: 1;
     flex-shrink: 1; */
     font-size: 0.8rem;
@@ -198,7 +198,7 @@ const MenuTxt = styled.p`
   padding: 0 0.5rem;
   cursor: pointer;
   /* width: 100%; */
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     font-size: 0.8rem;
   }
 `;
@@ -228,7 +228,7 @@ const Txt = styled.p`
   font-family: "CairoBold";
   font-size: 0.9rem;
   width: ${({ width }) => width};
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     font-size: 0.8rem;
   }
 `;
@@ -266,7 +266,7 @@ const ShowContentWarper = styled.div`
   background-color: ${({ theme }) => theme.soft};
   border-radius: 8px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
   }
 `;
 /* -------------FieldSet------------------------ */
@@ -283,7 +283,7 @@ const FieldSet = styled.div`
   legend {
     font-size: 0.8rem;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     text-align: right;
     margin: 0;
     padding: 0px 0px 0px 0px;
@@ -299,7 +299,7 @@ const Txtlabel = styled.label`
   font-size: 0.9rem;
   min-width: 0px;
   color: ${({ theme }) => theme.text};
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     font-size: 0.8rem;
     min-width: 0px;
   }
@@ -315,7 +315,7 @@ const FlexDiv = styled.div`
   gap: 7px;
   margin: 0.5rem;
   background-color: #201f1f;
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     display: flex;
     font-size: 0.8rem;
     gap: 3px;
@@ -323,7 +323,7 @@ const FlexDiv = styled.div`
 `;
 const DataDiv= styled.div`
 width: 70%;
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   width: 100%;
   }
 `;
@@ -331,10 +331,21 @@ const ImageDataDiv= styled.div`
 display: flex;
 justify-content: center;
 width: 25%;
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   width: 100%;
 
   }
+`;
+
+const WraperDiv=styled.div`
+display :flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+
+
 `;
 
 /* ------------------------------------- */
@@ -362,5 +373,6 @@ export default {
   OfferCardWraper,
   OfferCardHeader,
   DataDiv,
-  ImageDataDiv
+  ImageDataDiv,
+  WraperDiv
 };

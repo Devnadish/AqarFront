@@ -16,10 +16,11 @@ import LeftDrawer from "../drawer/LeftDrawer";
 
 function AppHeader({ open, setOpen, darkMode, setDarkMode }) {
   const [openFilter, setOpenFilter] = useState(false);
+  const imagePath=import.meta.env.VITE_mainPageImage+"logo.jpg"
   return (
     <>
       <Style.Container>
-        <Style.Logo>logo</Style.Logo>
+        <Style.Logo urx={imagePath}></Style.Logo>
         <Style.Menu>
           {/*  --------------------------------------------*/}
           <Style.MenuLink to="/about">

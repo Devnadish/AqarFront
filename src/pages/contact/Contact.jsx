@@ -20,6 +20,7 @@ function Contact() {
     setIscopy(!iscopy);
     toast.success("تم حفظ الاحداثيات انسخها لجوجل ماب  لتصل الينا بالسلامة");
   };
+  const imagePath=import.meta.env.VITE_mainPageImage+"mapImage.jpg"
   return (
 
 
@@ -36,7 +37,7 @@ function Contact() {
       {/* =============================================== */}
       <cpm.LeftArea>
         <cpm.HeroImageWarper>
-          <cpm.Image src="./img/map1.jpg" />
+          <cpm.Image src={imagePath} />
         </cpm.HeroImageWarper>
         <cpm.FlexDiv direction="row">
           

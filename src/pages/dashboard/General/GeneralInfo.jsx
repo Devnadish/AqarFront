@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import glb from "../../../component/globalCpm";
 import cpm from "./generalCpm";
 import ImageUploadBtn from "../../../component/ImageUploadBtn/ImageUploadBtn";
@@ -13,9 +13,16 @@ function GeneralInfo({
 }) {
   const [logoPreview, setLogoPreview] = useState(null);
 
+useEffect(() => {
+  
+  setLogoPreview( import.meta.env.VITE_mainPageImage+"logo.jpg");
+  
+
+},[])
+
+
   const handleimage = (event) => {
     setImageLogo((pre) => event.target.files[0]);
-
     setLogoPreview(URL.createObjectURL(event.target.files[0]));
     console.log(logoPreview);
   };

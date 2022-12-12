@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import glb from "../../../component/globalCpm";
 import cpm from "./generalCpm";
 import ImageUploadBtn from "../../../component/ImageUploadBtn/ImageUploadBtn";
@@ -16,7 +16,16 @@ function MainPageInfo({
   const handleimage = (event) => {
     setHeroImage((pre) => event.target.files[0]);
     setHeroPreview(URL.createObjectURL(event.target.files[0]));
+
   };
+  
+useEffect(() => {
+
+  setHeroPreview( import.meta.env.VITE_mainPageImage+"heroimage.jpg");
+  
+
+},[])
+
   return (
     <>
       <cpm.CardWraper>

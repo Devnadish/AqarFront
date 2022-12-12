@@ -133,6 +133,9 @@ const DataForm = ({
 
   return (
     <>
+    <cpm.WraperDiv >
+ 
+      <h1 style={{marginBottom:"10px"}}>المعلومات العامة  للمنصة</h1>
       <cpm.NormalDivr>
         <glb.Form onSubmit={handleData} id="myform">
           <GeneralInfo
@@ -176,6 +179,8 @@ const DataForm = ({
           <cpm.Btn type="submit">حفظ التعديلات</cpm.Btn>
         </glb.Form>
       </cpm.NormalDivr>
+      </cpm.WraperDiv>
+     
     </>
   );
 };

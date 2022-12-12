@@ -40,7 +40,7 @@ font-size:1rem;
   color: ${({ theme }) => theme.text};
   font-family: "CairoBold";
   
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     font-size:.85rem;
    
   }

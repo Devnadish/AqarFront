@@ -15,7 +15,7 @@ const CardWraper = styled.div`
   color: ${({ theme }) => theme.text};
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   overflow: auto;
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     max-width: 500px;
     width: 100%;
@@ -39,7 +39,7 @@ const OfferCardWraper = styled.div`
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   overflow: auto;
   
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     max-width: 500px;
     width: 100%;
@@ -106,7 +106,7 @@ height: 100%;
 overflow: auto;
 /* padding: 1rem; */
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   flex-direction: column;
   max-height: 100%;
   height: 100%;
@@ -128,7 +128,7 @@ height: 100%;
 overflow: auto;
 /* padding: 1rem; */
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   flex-direction: column;
   max-height: 100%;
   height: 100%;

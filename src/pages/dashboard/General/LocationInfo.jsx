@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import glb from "../../../component/globalCpm";
 import cpm from "./generalCpm";
 import ImageUploadBtn from "../../../component/ImageUploadBtn/ImageUploadBtn";
@@ -12,6 +12,14 @@ function LocationInfo({
   setMapImage,
 }) {
   const [mapPreview, setMapPreview] = useState(null);
+  
+useEffect(() => {
+
+  setMapPreview( import.meta.env.VITE_mainPageImage+"mapImage.jpg");
+  
+
+},[])
+
 
   const handleimage = (event) => {
     setMapImage((pre) => event.target.files[0]);
