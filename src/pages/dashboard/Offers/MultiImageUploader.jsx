@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { useDropzone } from "react-dropzone";
-import React from "react";
+import React,{useState} from "react";
+import DiloagShow from "../../../component/dailog/DiloagShow"
+import glb from "../../../component/globalCpm";
 
 const Dropzone = styled.div`
   display: flex;
@@ -62,7 +64,9 @@ const RemoveImage = styled.button`
 `;
 
 function MultiImageUploader({ files, setFiles, maxUpload, isMulti }) {
-  // const [files, setFiles] = useState([]);
+  
+  const [open, setOpen] = useState(false);
+  const [bigImage, setBigImage] = useState("");
   const { getRootProps, getInputProps } = useDropzone({
     accept: "image/*",
     maxFiles: maxUpload,
@@ -95,16 +99,32 @@ function MultiImageUploader({ files, setFiles, maxUpload, isMulti }) {
   // ));
 
   const PreviewImage = () => {
+
+const handleClike=(I)=>{
+  setBigImage(pre=>I)
+   setOpen(true)
+
+}
+
     return (
       <>
         {files.map((file) => (
           <React.Fragment key={file.name}>
-            <ImageWreaper>
-              <ImagePreview src={file.preview} alt="image" />
+            <ImageWreaper >
+              <ImagePreview src={file.preview} alt="image" onClick={()=>handleClike(file.preview)}/>
               <RemoveImage>X</RemoveImage>
             </ImageWreaper>
+           
+            {open   ? (
+        <DiloagShow open={open} toggle={setOpen}>
+          <glb.Image src={bigImage} />
+        </DiloagShow>
+        
+      ) : null}
+
           </React.Fragment>
         ))}
+        
       </>
     );
   };
