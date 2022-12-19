@@ -2,30 +2,26 @@ import React from "react";
 import glb from "../../component/globalCpm";
 
 // setXdefaultValue
-function SelectCopm({ Xlabel, data ,  dirLabel="column",Xrefrence,setSelectId,SelectId}) {
-
+function SelectCopm({ Xlabel, data ,  dirLabel="column",Xrefrence,setXvalue,XdefaultValue,setSelectId,SelectId}) {
   const handleChane=(e)=>{
-    setSelectId(e.target.value)
-   
+    setSelectId(pre=>e.target.value)
+    // console.log(SelectId)
   }
-
   return (
     <>
       <glb.InputContainer dirLabel={dirLabel}>
         <glb.TXTLabel>{Xlabel}</glb.TXTLabel>
-     
         <glb.CustomSelectDiv>
           <glb.SeclectOption
             ref={Xrefrence}
-            value={SelectId}
             onChange={(e) => handleChane(e)}
+            value={SelectId}
+            defaultValue ={XdefaultValue}
           >
-              
             {data?.map((el) => {
-             
               return (
                 <React.Fragment key={el.id}>
-                    <option value={el.id}>{el.label}</option>
+                  <option value={el.id}>{el.label}</option>
                 </React.Fragment>
               );
             })}

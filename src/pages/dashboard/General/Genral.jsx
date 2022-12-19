@@ -59,7 +59,7 @@ const Genral = () => {
     formData.append("logoImage", imageLogo);
     formData.append("heroImage", heroimage);
 
-    console.log(Array.from(formData));
+    // console.log(Array.from(formData));
 
     const sendData = axios
       .post("http://localhost:3009/aqar/savenewinfo", formData)

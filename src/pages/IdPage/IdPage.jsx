@@ -52,7 +52,7 @@ function IdPage({ data }) {
 export default IdPage;
 
 const SideMenu = ({ comp = "x", setComp, id, mydata }) => {
-  console.log(mydata.id);
+  // console.log(mydata.id);
   return (
     <>
       <cpm.SideMenu>

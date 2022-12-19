@@ -22,11 +22,11 @@ export const OfferOther = ({
   setIsComment,
   setIsOwner,
 }) => {
-  console.log(
-    "price :" + isShowPrice,
-    "isComment :" + isComment,
-    "isOwner :" + isOwner
-  );
+  // console.log(
+  //   "price :" + isShowPrice,
+  //   "isComment :" + isComment,
+  //   "isOwner :" + isOwner
+  // );
   return (
     <>
       <InnerBoxCom flexDir="row">

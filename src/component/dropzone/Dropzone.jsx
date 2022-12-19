@@ -37,7 +37,7 @@ function Dropzone() {
           })
         )
       );
-      console.log(acceptedFiles);
+      // console.log(acceptedFiles);
     },
   });
 

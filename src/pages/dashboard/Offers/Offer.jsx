@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import cpm from "../dashbordCpm";
 import Card from "../CardCpm";
 import Select from "react-select"
-import { useGetdata } from "../../../component/utils/hooks/useGetdata";
-import axios from "axios";
-import { toast } from "react-toastify";
-import styled from "styled-components";
+
 import DiloagShow from "../../../component/dailog/DiloagShow";
 import NewOffer from "./NewOffer";
 

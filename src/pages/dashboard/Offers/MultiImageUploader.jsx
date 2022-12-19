@@ -84,22 +84,9 @@ function MultiImageUploader({ files, setFiles, maxUpload, isMulti,title="",noteT
           })
         )
       );
-      console.log(acceptedFiles);
-    },
+        },
   });
-
-  // const images = files.map((file) => (
-  //   <>
-  //   <ImageWreaper>
-  //   <ImagePreview
-  //     key={file.name}
-  //     src={file.preview}
-  //     alt="image"
-  //   />
-  //   <button>delete</button>
-  //   </ImageWreaper>
-  //   </>
-  // ));
+ 
 
   const PreviewImage = () => {
 

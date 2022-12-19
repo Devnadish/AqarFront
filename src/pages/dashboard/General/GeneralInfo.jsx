@@ -24,7 +24,7 @@ useEffect(() => {
   const handleimage = (event) => {
     setImageLogo((pre) => event.target.files[0]);
     setLogoPreview(URL.createObjectURL(event.target.files[0]));
-    console.log(logoPreview);
+    // console.log(logoPreview);
   };
 
   return (

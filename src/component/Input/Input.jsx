@@ -12,7 +12,7 @@ export function Input({
   xhidden  ,
   xvalue
 }) {
- console.log("XdefalutValue ",XdefalutValue)
+//  console.log("XdefalutValue ",XdefalutValue)
   return (
     <>
       <glb.InputContainer dirLabel={dirLabel}>
